@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TRIANGLE MATH</title>
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" href="//d5wfroyti11sa.cloudfront.net/prod/client/ts-10.0.28.min.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+        <link rel="stylesheet" src="styles.css"/>
+	</head>
+	<body>
+		<header data-ts="TopBar"></header>
+		<main data-ts="Main">
+			<div data-ts="MainContent">
+                <div class="container">
+                    <h3>TRIANGLE CALCULATOR</h3>
+                </div>
+                <div class="container" id="outputArea">
+                    <p>This is an ... triangle with</p>
+                </div>
+                <div class="container" id="canvas-container">
+                    <canvas id="canvas" width="500" height="500"></canvas>
+                </div>
+            </div>
+        </main>
+
+        <aside data-ts="SideBar">
+            <div data-ts="Panel">
+                <p>Enter the sides lengths of the triangle</p>
+                <form data-ts="Form" id="selector">
+                        <fieldset>
+                            <label  class="ts-right" id="lengthA" value="10">
+                                <span>length of a</span>
+                                <input/>
+                            </label>
+                            <label  class="ts-right" id="lengthB" value="10">
+                                <span>length of b</span>
+                                <input/>
+                            </label>
+                            <label  class="ts-right" id="lengthC" value="10">
+                                <span>length of c</span>
+                                <input/>
+                            </label>
+                        </fieldset>
+                    </form>
+                <menu data-ts="Buttons">
+                    <li>
+                        <button class="ts-primary" id="selector">
+                            <span>Calculate</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="ts-secondary">
+                            <span>Cancel</span>
+                        </button>
+                    </li>
+            </div>
+            <div data-ts="Footer" class="ts-show-mobile-only"> ... </div>
+        </aside>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="//d5wfroyti11sa.cloudfront.net/prod/client/ts-10.0.28.min.js"></script>
+        <script src="scripts.js"></script>
+	</body>
+</html>
+
